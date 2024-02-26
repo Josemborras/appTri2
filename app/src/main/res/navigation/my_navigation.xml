@@ -14,12 +14,12 @@
         android:id="@+id/pantallaDos"
         android:name="com.example.proyecto2trimestre.PantallaDos"
         android:label="fragment_pantalla_dos"
-        tools:layout="@layout/fragment_pantalla_dos" />
+        tools:layout="@layout/pantalla_dos" />
     <fragment
         android:id="@+id/pantallaTres"
         android:name="com.example.proyecto2trimestre.PantallaTres"
         android:label="fragment_pantalla_tres"
-        tools:layout="@layout/fragment_pantalla_tres" />
+        tools:layout="@layout/pantalla_tres" />
     <fragment
         android:id="@+id/pantallaCuatro"
         android:name="com.example.proyecto2trimestre.PantallaCuatro"
