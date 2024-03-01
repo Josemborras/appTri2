@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/pantallaUno">
+
+    <fragment
+        android:id="@+id/pantallaUno"
+        android:name="com.example.proyecto2trimestre.PantallaUno"
+        android:label="pantalla_uno"
+        tools:layout="@layout/pantalla_uno">
+        <action
+            android:id="@+id/action_pantallaUno_to_pantallaDos"
+            app:destination="@id/pantallaDos" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantallaDos"
+        android:name="com.example.proyecto2trimestre.PantallaDos"
+        android:label="pantalla_dos"
+        tools:layout="@layout/pantalla_dos" >
+        <action
+            android:id="@+id/action_pantallaDos_to_pantallaTres"
+            app:destination="@id/pantallaTres" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantallaTres"
+        android:name="com.example.proyecto2trimestre.PantallaTres"
+        android:label="pantalla_tres"
+        tools:layout="@layout/pantalla_tres" >
+        <action
+            android:id="@+id/action_pantallaTres_to_pantallaCuatro"
+            app:destination="@id/pantallaCuatro" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantallaCuatro"
+        android:name="com.example.proyecto2trimestre.PantallaCuatro"
+        android:label="pantalla_cuatro"
+        tools:layout="@layout/pantalla_cuatro" />
+</navigation>
