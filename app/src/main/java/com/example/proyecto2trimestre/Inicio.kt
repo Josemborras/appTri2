@@ -3,27 +3,21 @@ package com.example.proyecto2trimestre
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
-import android.view.Menu
-import android.view.MenuInflater
-import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.view.MenuHost
-import androidx.core.view.MenuProvider
-import androidx.navigation.fragment.findNavController
-import com.example.proyecto2trimestre.databinding.PantallaDosBinding
-import com.example.proyecto2trimestre.databinding.PantallaUnoBinding
+import com.example.proyecto2trimestre.databinding.InicioBinding
 
 
-class PantallaDos : Fragment() {
 
-    private lateinit var binding: PantallaDosBinding
+class Inicio : Fragment() {
+
+    private lateinit var binding: InicioBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = PantallaDosBinding.inflate(inflater, container, false)
+        binding = InicioBinding.inflate(inflater, container, false)
         return binding.root
 
 

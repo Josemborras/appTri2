@@ -12,16 +12,16 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
-import com.example.proyecto2trimestre.databinding.PantallaUnoBinding
+import com.example.proyecto2trimestre.databinding.LoginBinding
 
-class PantallaUno : Fragment() {
-    private lateinit var binding: PantallaUnoBinding
+class Login : Fragment() {
+    private lateinit var binding: LoginBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = PantallaUnoBinding.inflate(inflater, container, false)
+        binding = LoginBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -38,11 +38,11 @@ class PantallaUno : Fragment() {
         val passAdmin = "nba789"
         binding.btLogin.setOnClickListener {
             if (binding.etUser.text.toString() == invitado && binding.etPassword.text.toString() == passInvitado) {
-                findNavController().navigate(R.id.action_pantallaUno_to_pantallaDos)
+                findNavController().navigate(R.id.action_login_to_inicio)
             } else if (binding.etUser.text.toString() == usuario && binding.etPassword.text.toString() == passUsuario) {
-                findNavController().navigate(R.id.action_pantallaUno_to_pantallaDos)
+                findNavController().navigate(R.id.action_login_to_inicio)
             } else if (binding.etUser.text.toString() == admin && binding.etPassword.text.toString() == passAdmin) {
-                findNavController().navigate(R.id.action_pantallaUno_to_pantallaDos)
+                findNavController().navigate(R.id.action_login_to_inicio)
             } else if (binding.etUser.text.toString() == invitado && binding.etPassword.text.toString() != passInvitado) {
                 binding.etPassword.error = "Contraseña incorrecta"
             } else if (binding.etUser.text.toString() == usuario && binding.etPassword.text.toString() != passInvitado) {

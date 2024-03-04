@@ -3,38 +3,35 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_navigation"
-    app:startDestination="@id/pantallaUno">
+    app:startDestination="@id/login">
 
     <fragment
-        android:id="@+id/pantallaUno"
-        android:name="com.example.proyecto2trimestre.PantallaUno"
-        android:label="pantalla_uno"
-        tools:layout="@layout/pantalla_uno">
-        <action
-            android:id="@+id/action_pantallaUno_to_pantallaDos"
-            app:destination="@id/pantallaDos" />
-    </fragment>
+        android:id="@+id/inicio"
+        android:name="com.example.proyecto2trimestre.Inicio"
+        android:label="inicio"
+        tools:layout="@layout/inicio" />
     <fragment
-        android:id="@+id/pantallaDos"
-        android:name="com.example.proyecto2trimestre.PantallaDos"
-        android:label="pantalla_dos"
-        tools:layout="@layout/pantalla_dos" >
-        <action
-            android:id="@+id/action_pantallaDos_to_pantallaTres"
-            app:destination="@id/pantallaTres" />
-    </fragment>
+        android:id="@+id/partidos"
+        android:name="com.example.proyecto2trimestre.Partidos"
+        android:label="partidos"
+        tools:layout="@layout/partidos" />
     <fragment
-        android:id="@+id/pantallaTres"
-        android:name="com.example.proyecto2trimestre.PantallaTres"
-        android:label="pantalla_tres"
-        tools:layout="@layout/pantalla_tres" >
-        <action
-            android:id="@+id/action_pantallaTres_to_pantallaCuatro"
-            app:destination="@id/pantallaCuatro" />
-    </fragment>
+        android:id="@+id/contacto"
+        android:name="com.example.proyecto2trimestre.Contacto"
+        android:label="contacto"
+        tools:layout="@layout/contacto" />
     <fragment
-        android:id="@+id/pantallaCuatro"
-        android:name="com.example.proyecto2trimestre.PantallaCuatro"
-        android:label="pantalla_cuatro"
-        tools:layout="@layout/pantalla_cuatro" />
+        android:id="@+id/clasificacion"
+        android:name="com.example.proyecto2trimestre.Clasificacion"
+        android:label="clasificacion"
+        tools:layout="@layout/clasificacion" />
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.proyecto2trimestre.Login"
+        android:label="login"
+        tools:layout="@layout/login" >
+        <action
+            android:id="@+id/action_login_to_inicio"
+            app:destination="@id/inicio" />
+    </fragment>
 </navigation>
