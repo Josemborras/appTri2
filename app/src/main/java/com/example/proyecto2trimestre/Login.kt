@@ -11,24 +11,25 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.NavController
+import androidx.navigation.NavHost
+import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.navigateUp
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
+import com.example.proyecto2trimestre.databinding.DesplegableBinding
 import com.example.proyecto2trimestre.databinding.LoginBinding
 
-class Login : Fragment() {
+class Login : AppCompatActivity() {
+
     private lateinit var binding: LoginBinding
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        binding = LoginBinding.inflate(inflater, container, false)
-        return binding.root
-    }
-
-
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = LoginBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         val invitado = "invitado"
         val usuario = "usuario"
@@ -36,13 +37,18 @@ class Login : Fragment() {
         val passInvitado = "nba123"
         val passUsuario = "nba456"
         val passAdmin = "nba789"
+
+
         binding.btLogin.setOnClickListener {
             if (binding.etUser.text.toString() == invitado && binding.etPassword.text.toString() == passInvitado) {
-                findNavController().navigate(R.id.action_login_to_inicio)
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
             } else if (binding.etUser.text.toString() == usuario && binding.etPassword.text.toString() == passUsuario) {
-                findNavController().navigate(R.id.action_login_to_inicio)
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
             } else if (binding.etUser.text.toString() == admin && binding.etPassword.text.toString() == passAdmin) {
-                findNavController().navigate(R.id.action_login_to_inicio)
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
             } else if (binding.etUser.text.toString() == invitado && binding.etPassword.text.toString() != passInvitado) {
                 binding.etPassword.error = "Contraseña incorrecta"
             } else if (binding.etUser.text.toString() == usuario && binding.etPassword.text.toString() != passInvitado) {
@@ -58,7 +64,7 @@ class Login : Fragment() {
 
         binding.tvOlvidada.setOnClickListener {
 
-            val builder = AlertDialog.Builder(requireContext())
+            val builder = AlertDialog.Builder(this)
             val view = layoutInflater.inflate(R.layout.recuperar_contrasena, null)
 
             builder.setView(view)
@@ -70,9 +76,9 @@ class Login : Fragment() {
             val enviar = view.findViewById<Button>(R.id.btRenviar)
             enviar.setOnClickListener {
                 if (!formatoCorreo(correo.text.toString())){
-                    Toast.makeText(requireContext(), "Correo no válido", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Correo no válido", Toast.LENGTH_SHORT).show()
                 }else{
-                    Toast.makeText(requireContext(), "Te hemos enviado un correo con las indicaciones que debes seguir", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Te hemos enviado un correo con las indicaciones que debes seguir", Toast.LENGTH_SHORT).show()
                     dialog.dismiss()
                 }
             }
@@ -89,4 +95,10 @@ class Login : Fragment() {
         val emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+"
         return email.matches(emailPattern.toRegex())
     }
-}
+
+
+    }
+
+
+
+

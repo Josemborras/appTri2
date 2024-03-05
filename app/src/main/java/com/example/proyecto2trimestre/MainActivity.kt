@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        val navHost = supportFragmentManager.findFragmentById(R.id.fragmentContainerView3) as NavHost
+        val navHost = supportFragmentManager.findFragmentById(R.id.fcwDesplegable) as NavHost
         navController = navHost.navController
 
         appBarConfiguration = AppBarConfiguration(

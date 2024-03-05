@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_navigation"
-    app:startDestination="@id/login">
+    app:startDestination="@id/inicio">
 
     <fragment
         android:id="@+id/inicio"
@@ -14,7 +14,11 @@
         android:id="@+id/partidos"
         android:name="com.example.proyecto2trimestre.Partidos"
         android:label="partidos"
-        tools:layout="@layout/partidos" />
+        tools:layout="@layout/partidos" >
+        <action
+            android:id="@+id/action_partidos_to_contacto"
+            app:destination="@id/contacto" />
+    </fragment>
     <fragment
         android:id="@+id/contacto"
         android:name="com.example.proyecto2trimestre.Contacto"
@@ -24,14 +28,9 @@
         android:id="@+id/clasificacion"
         android:name="com.example.proyecto2trimestre.Clasificacion"
         android:label="clasificacion"
-        tools:layout="@layout/clasificacion" />
-    <fragment
-        android:id="@+id/login"
-        android:name="com.example.proyecto2trimestre.Login"
-        android:label="login"
-        tools:layout="@layout/login" >
+        tools:layout="@layout/clasificacion" >
         <action
-            android:id="@+id/action_login_to_inicio"
-            app:destination="@id/inicio" />
+            android:id="@+id/action_clasificacion_to_partidos"
+            app:destination="@id/partidos" />
     </fragment>
 </navigation>
