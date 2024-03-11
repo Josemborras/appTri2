@@ -18,11 +18,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:icon="@drawable/grafico_de_barras"
-        android:title="Clasificacion" />
+        android:title="Equipos" />
     <item
         android:id="@+id/contacto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:icon="@drawable/chat"
         android:title="Contacto" />
+    <item
+        android:id="@+id/EquipoDetalle"
+        android:title="EquipoDetalle" />
 </menu>

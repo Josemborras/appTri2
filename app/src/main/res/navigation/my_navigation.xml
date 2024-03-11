@@ -25,12 +25,12 @@
         android:label="contacto"
         tools:layout="@layout/contacto" />
     <fragment
-        android:id="@+id/clasificacion"
-        android:name="com.example.proyecto2trimestre.Clasificacion"
-        android:label="clasificacion"
-        tools:layout="@layout/clasificacion" >
-        <action
-            android:id="@+id/action_clasificacion_to_partidos"
-            app:destination="@id/partidos" />
-    </fragment>
+        android:id="@+id/equipos"
+        android:name="com.example.proyecto2trimestre.Equipos"
+        android:label="equipos"
+        tools:layout="@layout/equipos" />
+    <fragment
+        android:id="@+id/EquipoDetalle"
+        android:name="com.example.proyecto2trimestre.EquipoDetalle"
+        android:label="holder" />
 </navigation>
