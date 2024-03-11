@@ -14,7 +14,7 @@
         android:icon="@drawable/calendario"
         android:title="Partidos" />
     <item
-        android:id="@+id/clasificacion"
+        android:id="@+id/equipos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:icon="@drawable/grafico_de_barras"

@@ -88,6 +88,7 @@
             android:ems="10"
             android:hint="Usuario"
             android:inputType="textEmailAddress"
+            android:text="invitado"
             android:textColor="#FFFFFF" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -111,7 +112,8 @@
             android:layout_height="wrap_content"
             android:hint="Contraseña"
             android:inputType="textPassword"
-            android:textColor="#FFFFFF" />
+            android:textColor="#FFFFFF"
+            tools:text="nba123" />
     </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

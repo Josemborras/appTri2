@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
             setOf(
                 R.id.inicio,
                 R.id.partidos,
-                R.id.clasificacion,
+                R.id.equipos,
                 R.id.contacto
 
             ), binding.drawerLayout

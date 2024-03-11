@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.proyecto2trimestre.Player
 import com.example.proyecto2trimestre.R
 
-class RosterAdapter(private val playerList: Array<Player>) :
+class RosterAdapter(private val playerList: ArrayList<Player>) :
     RecyclerView.Adapter<RosterAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
