@@ -70,23 +70,23 @@ class EquiposAdapter(val listaEquipos: ArrayList<FranNBA>) : Adapter<EquiposAdap
 
 }
 
-val bostonR = arrayOf(
-    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "MAR 03, 1998", 26, 6, "Duke", "#3 Pick in 2017 Draft"),
-    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "MAR 03, 1998", 26, 6, "Duke", "#3 Pick in 2017 Draft"),
-    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "MAR 03, 1998", 26, 6, "Duke", "#3 Pick in 2017 Draft"),
-    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "MAR 03, 1998", 26, 6, "Duke", "#3 Pick in 2017 Draft"),
-    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "MAR 03, 1998", 26, 6, "Duke", "#3 Pick in 2017 Draft"),
-    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "MAR 03, 1998", 26, 6, "Duke", "#3 Pick in 2017 Draft"),
-    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "MAR 03, 1998", 26, 6, "Duke", "#3 Pick in 2017 Draft"),
-    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "MAR 03, 1998", 26, 6, "Duke", "#3 Pick in 2017 Draft"),
-    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "MAR 03, 1998", 26, 6, "Duke", "#3 Pick in 2017 Draft"),
-    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "MAR 03, 1998", 26, 6, "Duke", "#3 Pick in 2017 Draft"),
-    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "MAR 03, 1998", 26, 6, "Duke", "#3 Pick in 2017 Draft"),
-    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "MAR 03, 1998", 26, 6, "Duke", "#3 Pick in 2017 Draft"),
-    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "MAR 03, 1998", 26, 6, "Duke", "#3 Pick in 2017 Draft"),
-    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "MAR 03, 1998", 26, 6, "Duke", "#3 Pick in 2017 Draft"),
-    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "MAR 03, 1998", 26, 6, "Duke", "#3 Pick in 2017 Draft"),
-    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "MAR 03, 1998", 26, 6, "Duke", "#3 Pick in 2017 Draft"),
-    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "MAR 03, 1998", 26, 6, "Duke", "#3 Pick in 2017 Draft"),
+val bostonR = listOf(
+    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "03/03/1998", 26, 6),
+    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "03/03/1998", 26, 6),
+    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "03/03/1998", 26, 6),
+    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "03/03/1998", 26, 6),
+    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "03/03/1998", 26, 6),
+    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "03/03/1998", 26, 6),
+    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "03/03/1998", 26, 6),
+    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "03/03/1998", 26, 6),
+    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "03/03/1998", 26, 6),
+    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "03/03/1998", 26, 6),
+    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "03/03/1998", 26, 6),
+    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "03/03/1998", 26, 6),
+    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "03/03/1998", 26, 6),
+    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "03/03/1998", 26, 6),
+    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "03/03/1998", 26, 6),
+    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "03/03/1998", 26, 6),
+    Player("Jayson Tatum", "#0", "F-G", "6-8", "210 lbs", "03/03/1998", 26, 6),
 
     )

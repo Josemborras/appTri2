@@ -8,9 +8,8 @@ data class Player(
     val weight: String,
     val birthdate: String,
     val age: Int,
-    val experience: Int,
-    val school: String,
-    val acquisitionDetails: String
+    val experience: Int
+
 )
 
 

@@ -1,33 +1,30 @@
 package com.example.proyecto2trimestre
 
+import RosterAdapter
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.constraintlayout.helper.widget.Carousel.Adapter
-import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
+import android.widget.Adapter
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.proyecto2trimestre.databinding.EquiposBinding
+import com.example.proyecto2trimestre.databinding.RosterBinding
 
-class Equipos : Fragment() {
-    private lateinit var binding: EquiposBinding
-    private lateinit var equiposAdapter: Adapter
+
+class RosterFragment : Fragment() {
+    private lateinit var binding: RosterBinding
+    private lateinit var rosterAdapter: Adapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = EquiposBinding.inflate(inflater, container, false)
+        binding = RosterBinding.inflate(inflater, container, false)
         return binding.root
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        val listaEquipos = ArrayList<FranNBA>()
 
         val atlanta = FranNBA(R.drawable.atlanta,"Atlanta","Hawks", 0,"este", roster = bostonR)
         val dallas = FranNBA(R.drawable.dallas,"Dallas","Mavericks",1, "oeste", roster = bostonR)
@@ -60,45 +57,11 @@ class Equipos : Fragment() {
         val washington = FranNBA(R.drawable.wizards,"Washington","Wizards",1, "este", roster = bostonR)
         val utah = FranNBA(R.drawable.utah,"Utah","Jazz",0, "oeste", roster = bostonR)
 
-        listaEquipos.add(dallas)
-        listaEquipos.add(atlanta)
-        listaEquipos.add(denver)
-        listaEquipos.add(boston)
-        listaEquipos.add(golden)
-        listaEquipos.add(brooklyn)
-        listaEquipos.add(houston)
-        listaEquipos.add(charlotte)
-        listaEquipos.add(clippers)
-        listaEquipos.add(chicago)
-        listaEquipos.add(lakers)
-        listaEquipos.add(cleveland)
-        listaEquipos.add(memphis)
-        listaEquipos.add(detroit)
-        listaEquipos.add(minesota)
-        listaEquipos.add(indiana)
-        listaEquipos.add(newOrleans)
-        listaEquipos.add(miami)
-        listaEquipos.add(oklahoma)
-        listaEquipos.add(milwaukee)
-        listaEquipos.add(phoenix)
-        listaEquipos.add(newYork)
-        listaEquipos.add(portland)
-        listaEquipos.add(orlando)
-        listaEquipos.add(sacramento)
-        listaEquipos.add(phili)
-        listaEquipos.add(sanAntonio)
-        listaEquipos.add(toronto)
-        listaEquipos.add(utah)
-        listaEquipos.add(washington)
-
-
         val layoutManager = GridLayoutManager(requireContext(),2)
-        equiposAdapter = EquiposAdapter(listaEquipos)
+        rosterAdapter = RosterAdapter()
 
         binding.rvEquipos.layoutManager = layoutManager
         binding.rvEquipos.adapter = equiposAdapter as EquiposAdapter
 
     }
 }
-
-

@@ -28,14 +28,5 @@
         android:id="@+id/equipos"
         android:name="com.example.proyecto2trimestre.Equipos"
         android:label="equipos"
-        tools:layout="@layout/equipos" >
-        <action
-            android:id="@+id/action_equipos_to_roster_fragment"
-            app:destination="@id/roster_fragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/roster_fragment"
-        android:name="com.example.proyecto2trimestre.roster_fragment"
-        android:label="fragment_roster_fragment"
-        tools:layout="@layout/fragment_roster_fragment" />
+        tools:layout="@layout/equipos" />
 </navigation>

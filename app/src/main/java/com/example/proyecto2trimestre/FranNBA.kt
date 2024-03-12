@@ -4,5 +4,9 @@ data class FranNBA(
     val logo: Int,
     val nombre: String,
     val nick: String,
-    val conferencia: String
+    val titulos: Int,
+    val conferencia: String,
+    val roster: List<Player>
 )
+
+
