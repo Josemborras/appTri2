@@ -26,14 +26,12 @@ class RosterAdapter(private val playerList: ArrayList<Player>) :
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val playerName: TextView = itemView.findViewById(R.id.tvNombre)
         private val playerNumber: TextView = itemView.findViewById(R.id.tvNum)
-        private val playerPosition: TextView = itemView.findViewById(R.id.tvPos)
+        private val playerPosition: TextView = itemView.findViewById(R.id.tvPOS)
         private val playerHeight: TextView = itemView.findViewById(R.id.tvHeight)
         private val playerWeight: TextView = itemView.findViewById(R.id.tvWeight)
         private val playerBirth: TextView = itemView.findViewById(R.id.tvBirth)
         private val playerAge: TextView = itemView.findViewById(R.id.tvAge)
         private val playerEXP: TextView = itemView.findViewById(R.id.tvEXP)
-        private val playerSchool: TextView = itemView.findViewById(R.id.tvSchool)
-        private val playerHA: TextView = itemView.findViewById(R.id.tvHA)
 
         fun bind(player: Player) {
             playerName.text = player.name

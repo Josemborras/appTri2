@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.constraintlayout.helper.widget.Carousel.Adapter
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.proyecto2trimestre.databinding.EquiposBinding
@@ -28,41 +29,68 @@ class Equipos : Fragment() {
 
         val listaEquipos = ArrayList<FranNBA>()
 
-        val atlanta = FranNBA(R.drawable.atlanta,"Atlanta","Hawks")
-        val boston = FranNBA(R.drawable.boston,"Boston","Celtics")
-        val atlanta2 = FranNBA(R.drawable.atlanta,"Atlanta","Hawks")
-        val atlanta3 = FranNBA(R.drawable.atlanta,"Atlanta","Hawks")
-        val atlanta4 = FranNBA(R.drawable.atlanta,"Atlanta","Hawks")
-        val atlanta5 = FranNBA(R.drawable.atlanta,"Atlanta","Hawks")
-        val atlanta6 = FranNBA(R.drawable.atlanta,"Atlanta","Hawks")
-        val atlanta7 = FranNBA(R.drawable.atlanta,"Atlanta","Hawks")
-        val atlanta8 = FranNBA(R.drawable.atlanta,"Atlanta","Hawks")
-        val atlanta9 = FranNBA(R.drawable.atlanta,"Atlanta","Hawks")
-        val atlanta10 = FranNBA(R.drawable.atlanta,"Atlanta","Hawks")
-        val atlanta11 = FranNBA(R.drawable.atlanta,"Atlanta","Hawks")
-        val atlanta12 = FranNBA(R.drawable.atlanta,"Atlanta","Hawks")
-        val atlanta13 = FranNBA(R.drawable.atlanta,"Atlanta","Hawks")
-        val atlanta14 = FranNBA(R.drawable.atlanta,"Atlanta","Hawks")
-        val atlanta15 = FranNBA(R.drawable.atlanta,"Atlanta","Hawks")
-        val atlanta16 = FranNBA(R.drawable.atlanta,"Atlanta","Hawks")
+        val atlanta = FranNBA(R.drawable.atlanta,"Atlanta","Hawks", "este")
+        val dallas = FranNBA(R.drawable.dallas,"Dallas","Mavericks", "oeste")
+        val boston = FranNBA(R.drawable.boston,"Boston","Celtics", "este" )
+        val denver = FranNBA(R.drawable.denver,"Denver","Nuggets", "oeste")
+        val brooklyn = FranNBA(R.drawable.brooklyn,"Brooklyn","Nets", "este")
+        val golden = FranNBA(R.drawable.golden_state_warriors,"Golden State","Warriors", "oeste")
+        val charlotte = FranNBA(R.drawable.charlotte,"Charlotte","Hornets", "este")
+        val houston = FranNBA(R.drawable.houston_rockets_seeklogo,"Houston","Rockets", "oeste")
+        val chicago = FranNBA(R.drawable.chicago,"Chicago","Bulls", "este")
+        val clippers = FranNBA(R.drawable.clippers,"LA","Clippers", "oeste")
+        val cleveland = FranNBA(R.drawable.cleveland,"Cleveland","Cavaliers", "este")
+        val lakers = FranNBA(R.drawable.lakers,"Los Angeles","Lakers", "oeste")
+        val detroit = FranNBA(R.drawable.pistons,"Detroit","Pistons", "este")
+        val memphis = FranNBA(R.drawable.memphis,"Memphis","Grizzlies", "oeste")
+        val indiana = FranNBA(R.drawable.indiana_pacers_seeklogo,"Indiana","Pacers", "este")
+        val minesota = FranNBA(R.drawable.minnesota,"Minnesota","Timberwolves", "oeste")
+        val miami = FranNBA(R.drawable.miami,"Miami","Heat", "este")
+        val newOrleans = FranNBA(R.drawable.new_orleans,"New Orleans","Pelicans", "oeste")
+        val milwaukee = FranNBA(R.drawable.milwakeu,"Milwaukee","Bucks", "este")
+        val oklahoma = FranNBA(R.drawable.okc,"Oklahoma City","Thunder", "oeste")
+        val newYork = FranNBA(R.drawable.knicks,"New York","Knicks", "este")
+        val phoenix = FranNBA(R.drawable.phoenix,"Phoenix","Suns", "oeste")
+        val orlando = FranNBA(R.drawable.orlando,"Orlando","Magic", "este")
+        val portland = FranNBA(R.drawable.portland,"Portland","Trail Blazzers", "oeste")
+        val phili = FranNBA(R.drawable.phili,"Philadelphia","76ers", "este")
+        val sacramento = FranNBA(R.drawable.sacramento,"Sacramento","Kings", "oeste")
+        val toronto = FranNBA(R.drawable.toronto,"Toronto","Raptors", "este")
+        val sanAntonio = FranNBA(R.drawable.san_antonio,"San Antonio","Spurs", "oeste")
+        val washington = FranNBA(R.drawable.wizards,"Washington","Wizards", "este")
+        val utah = FranNBA(R.drawable.utah,"Utah","Jazz", "oeste")
 
+        listaEquipos.add(dallas)
         listaEquipos.add(atlanta)
+        listaEquipos.add(denver)
         listaEquipos.add(boston)
-        listaEquipos.add(atlanta2)
-        listaEquipos.add(atlanta3)
-        listaEquipos.add(atlanta4)
-        listaEquipos.add(atlanta5)
-        listaEquipos.add(atlanta6)
-        listaEquipos.add(atlanta7)
-        listaEquipos.add(atlanta8)
-        listaEquipos.add(atlanta9)
-        listaEquipos.add(atlanta10)
-        listaEquipos.add(atlanta11)
-        listaEquipos.add(atlanta12)
-        listaEquipos.add(atlanta13)
-        listaEquipos.add(atlanta14)
-        listaEquipos.add(atlanta15)
-        listaEquipos.add(atlanta16)
+        listaEquipos.add(golden)
+        listaEquipos.add(brooklyn)
+        listaEquipos.add(houston)
+        listaEquipos.add(charlotte)
+        listaEquipos.add(clippers)
+        listaEquipos.add(chicago)
+        listaEquipos.add(lakers)
+        listaEquipos.add(cleveland)
+        listaEquipos.add(memphis)
+        listaEquipos.add(detroit)
+        listaEquipos.add(minesota)
+        listaEquipos.add(indiana)
+        listaEquipos.add(newOrleans)
+        listaEquipos.add(miami)
+        listaEquipos.add(oklahoma)
+        listaEquipos.add(milwaukee)
+        listaEquipos.add(phoenix)
+        listaEquipos.add(newYork)
+        listaEquipos.add(portland)
+        listaEquipos.add(orlando)
+        listaEquipos.add(sacramento)
+        listaEquipos.add(phili)
+        listaEquipos.add(sanAntonio)
+        listaEquipos.add(toronto)
+        listaEquipos.add(utah)
+        listaEquipos.add(washington)
+
 
         val layoutManager = GridLayoutManager(requireContext(),2)
         equiposAdapter = EquiposAdapter(listaEquipos)
@@ -71,49 +99,6 @@ class Equipos : Fragment() {
         binding.rvEquipos.adapter = equiposAdapter as EquiposAdapter
 
     }
-
-    private fun obtenerListaEquipos(): List<FranquiciaNBA> {
-        val ciudadesEquipos = arrayOf(
-            "Atlanta", "Boston", "Brooklyn", "Charlotte", "Chicago",
-            "Cleveland", "Dallas", "Denver", "Detroit", "Golden State",
-            "Houston", "Indiana", "LA", "Los Angeles", "Memphis",
-            "Miami", "Milwaukee", "Minnesota", "New Orleans", "New York",
-            "Oklahoma City", "Orlando", "Philadelphia", "Phoenix", "Portland",
-            "Sacramento", "San Antonio", "Toronto", "Utah", "Washington"
-        )
-
-        val apodosEquipos = arrayOf(
-            "Hawks", "Celtics", "Nets", "Hornets", "Bulls",
-            "Cavaliers", "Mavericks", "Nuggets", "Pistons", "Warriors",
-            "Rockets", "Pacers", "Clippers", "Lakers", "Grizzlies",
-            "Heat", "Bucks", "Timberwolves", "Pelicans", "Knicks",
-            "Thunder", "Magic", "76ers", "Suns", "Trail Blazers",
-            "Kings", "Spurs", "Raptors", "Jazz", "Wizards"
-        )
-
-        val idsLogos = intArrayOf(
-            R.drawable.atlanta, R.drawable.boston, R.drawable.brooklyn,
-            R.drawable.charlotte, R.drawable.chicago, R.drawable.cleveland,
-            R.drawable.dallas, R.drawable.denver, R.drawable.pistons,
-            R.drawable.golden_state_warriors, R.drawable.houston_rockets_seeklogo, R.drawable.indiana_pacers_seeklogo,
-            R.drawable.clippers, R.drawable.lakers, R.drawable.memphis,
-            R.drawable.miami, R.drawable.milwakeu, R.drawable.minnesota,
-            R.drawable.new_orleans, R.drawable.knicks, R.drawable.okc,
-            R.drawable.orlando, R.drawable.phili, R.drawable.phoenix,
-            R.drawable.portland, R.drawable.sacramento, R.drawable.san_antonio,
-            R.drawable.toronto, R.drawable.utah, R.drawable.wizards
-        )
-
-        val listaEquipos = mutableListOf<FranquiciaNBA>()
-
-        for (i in ciudadesEquipos.indices) {
-            val equipo = FranquiciaNBA()
-            equipo.nombreEquipo = ciudadesEquipos[i]
-            equipo.idLogo = idsLogos[i]
-            equipo.nickname = "Apodo: ${apodosEquipos[i]}"
-            listaEquipos.add(equipo)
-        }
-
-        return listaEquipos
-    }
 }
+
+

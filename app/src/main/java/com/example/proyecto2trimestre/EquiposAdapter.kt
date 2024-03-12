@@ -4,10 +4,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.constraintlayout.helper.widget.Carousel
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.bumptech.glide.Glide
-
 import com.example.proyecto2trimestre.databinding.HolderBinding
 
 
@@ -29,6 +29,8 @@ class EquiposAdapter(val listaEquipos: ArrayList<FranNBA>) : Adapter<EquiposAdap
     }
 
     override fun onBindViewHolder(holder: Clase, position: Int) {
+
+
         val equipo = listaEquipos[position]
 
         with(holder.binding){
@@ -41,6 +43,12 @@ class EquiposAdapter(val listaEquipos: ArrayList<FranNBA>) : Adapter<EquiposAdap
         Glide.with(holder.itemView)
             .load(equipo.logo)
             .into(holder.binding.ivLogoEquipo)
+
+
+
+        holder.itemView.setOnClickListener {
+            Navigation.findNavController(holder.itemView).navigate(R.id.action_equipos_to_roster_fragment)
+        }
     }
 
     override fun count(): Int {
@@ -54,6 +62,12 @@ class EquiposAdapter(val listaEquipos: ArrayList<FranNBA>) : Adapter<EquiposAdap
     override fun onNewItem(index: Int) {
         TODO("Not yet implemented")
     }
+
+    interface OnTeamClickListener {
+        fun onTeamClick(team: FranNBA)
+    }
+
+
 }
 
 val bostonR = arrayOf(
