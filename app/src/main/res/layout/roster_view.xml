@@ -3,61 +3,67 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <TextView
         android:id="@+id/tvPlayer"
-        android:layout_width="0dp"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textAlignment="textStart"
+        app:layout_constraintStart_toStartOf="@+id/view3"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvNum"
-        android:layout_width="0dp"
+        android:layout_width="15dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="116dp"
+        android:layout_marginStart="8dp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/tvPlayer"
         app:layout_constraintStart_toEndOf="@+id/tvPlayer" />
 
     <TextView
         android:id="@+id/tvPosicion"
-        android:layout_width="0dp"
+        android:layout_width="35dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="6dp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/tvPlayer"
         app:layout_constraintStart_toEndOf="@+id/tvNum" />
 
     <TextView
         android:id="@+id/tvAltura"
-        android:layout_width="0dp"
+        android:layout_width="30dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
+        android:layout_marginStart="18dp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/tvPlayer"
         app:layout_constraintStart_toEndOf="@+id/tvPosicion" />
 
     <TextView
         android:id="@+id/tvPeso"
-        android:layout_width="0dp"
+        android:layout_width="65dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="15dp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/tvPlayer"
         app:layout_constraintStart_toEndOf="@+id/tvAltura" />
 
     <TextView
         android:id="@+id/tvEdad"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="6dp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/tvPlayer"
         app:layout_constraintStart_toEndOf="@+id/tvPeso" />
 
     <TextView
         android:id="@+id/tvExp"
-        android:layout_width="0dp"
+        android:layout_width="15dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
+        android:layout_marginStart="10dp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/tvPlayer"
         app:layout_constraintStart_toEndOf="@+id/tvEdad" />
 

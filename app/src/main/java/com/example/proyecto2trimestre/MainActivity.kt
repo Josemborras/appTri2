@@ -8,17 +8,17 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import com.example.proyecto2trimestre.databinding.DesplegableBinding
+import com.example.proyecto2trimestre.databinding.DesplegableMenuBinding
 
 class MainActivity : AppCompatActivity() {
     
     private lateinit var navController: NavController
-    private lateinit var binding: DesplegableBinding
+    private lateinit var binding: DesplegableMenuBinding
     private lateinit var appBarConfiguration: AppBarConfiguration
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DesplegableBinding.inflate(layoutInflater)
+        binding = DesplegableMenuBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
 

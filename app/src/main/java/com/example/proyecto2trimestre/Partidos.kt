@@ -5,17 +5,16 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.proyecto2trimestre.databinding.InicioBinding
-import com.example.proyecto2trimestre.databinding.PartidosBinding
+import com.example.proyecto2trimestre.databinding.PartidosFragmentBinding
 
 class Partidos : Fragment() {
-    private lateinit var binding: PartidosBinding
+    private lateinit var binding: PartidosFragmentBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = PartidosBinding.inflate(inflater, container, false)
+        binding = PartidosFragmentBinding.inflate(inflater, container, false)
         return binding.root
 
 

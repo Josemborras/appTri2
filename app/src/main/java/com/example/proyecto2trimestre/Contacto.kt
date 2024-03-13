@@ -5,17 +5,17 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.proyecto2trimestre.databinding.ContactoBinding
+import com.example.proyecto2trimestre.databinding.ContactoFragmentBinding
 
 
 class Contacto : Fragment() {
-    private lateinit var binding: ContactoBinding
+    private lateinit var binding: ContactoFragmentBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = ContactoBinding.inflate(inflater, container, false)
+        binding = ContactoFragmentBinding.inflate(inflater, container, false)
         return binding.root
 
 

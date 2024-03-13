@@ -9,12 +9,12 @@
         android:id="@+id/inicio"
         android:name="com.example.proyecto2trimestre.Inicio"
         android:label="inicio"
-        tools:layout="@layout/inicio" />
+        tools:layout="@layout/inicio_activity" />
     <fragment
         android:id="@+id/partidos"
         android:name="com.example.proyecto2trimestre.Partidos"
         android:label="partidos"
-        tools:layout="@layout/partidos" >
+        tools:layout="@layout/partidos_fragment" >
         <action
             android:id="@+id/action_partidos_to_contacto"
             app:destination="@id/contacto" />
@@ -23,10 +23,18 @@
         android:id="@+id/contacto"
         android:name="com.example.proyecto2trimestre.Contacto"
         android:label="contacto"
-        tools:layout="@layout/contacto" />
+        tools:layout="@layout/contacto_fragment" />
     <fragment
         android:id="@+id/equipos"
         android:name="com.example.proyecto2trimestre.Equipos"
         android:label="equipos"
-        tools:layout="@layout/equipos" />
+        tools:layout="@layout/equipos_fragment" >
+        <action
+            android:id="@+id/action_equipos_to_rosterFragment"
+            app:destination="@id/rosterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rosterFragment"
+        android:name="com.example.proyecto2trimestre.RosterFragment"
+        android:label="RosterFragment" />
 </navigation>

@@ -1,5 +1,8 @@
-package com.example.proyecto2trimestre
+package com.example.proyecto2trimestre.dataClass
 
+import android.os.Parcelable
+
+@kotlinx.parcelize.Parcelize
 data class Player(
     val name: String,
     val number: String,
@@ -10,7 +13,7 @@ data class Player(
     val age: Int,
     val experience: Int
 
-)
+): Parcelable
 
 
 

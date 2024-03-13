@@ -5,19 +5,17 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.proyecto2trimestre.databinding.InicioBinding
-
-
+import com.example.proyecto2trimestre.databinding.InicioActivityBinding
 
 class Inicio : Fragment() {
 
-    private lateinit var binding: InicioBinding
+    private lateinit var binding: InicioActivityBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = InicioBinding.inflate(inflater, container, false)
+        binding = InicioActivityBinding.inflate(inflater, container, false)
         return binding.root
 
 

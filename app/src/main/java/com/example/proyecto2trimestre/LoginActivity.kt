@@ -8,14 +8,14 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.proyecto2trimestre.databinding.LoginBinding
+import com.example.proyecto2trimestre.databinding.LoginActivityBinding
 
 class LoginActivity : AppCompatActivity() {
 
-    private lateinit var binding: LoginBinding
+    private lateinit var binding:LoginActivityBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = LoginBinding.inflate(layoutInflater)
+        binding = LoginActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val invitado = "invitado"
