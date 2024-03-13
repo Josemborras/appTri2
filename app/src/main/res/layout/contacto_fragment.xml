@@ -255,7 +255,8 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Nombre" />
+                android:hint="Nombre"
+                android:textColor="#FFFFFF" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -272,7 +273,8 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Correo electronico" />
+                android:hint="Correo electronico"
+                android:textColor="#FFFFFF" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -289,14 +291,15 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Telefono" />
+                android:hint="Telefono"
+                android:textColor="#FFFFFF" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/button"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="112dp"
             android:text="Enviar"
             app:cornerRadius="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -313,9 +316,10 @@
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toTopOf="@+id/button"
             app:layout_constraintEnd_toEndOf="@+id/textInputLayout3"
-            app:layout_constraintHorizontal_bias="0.48"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="@+id/textInputLayout3"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+            app:layout_constraintVertical_bias="0.232" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

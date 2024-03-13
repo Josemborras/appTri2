@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.constraintlayout.helper.widget.Carousel
+import androidx.core.content.ContextCompat
 import androidx.core.os.bundleOf
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView.Adapter
@@ -41,6 +42,13 @@ class EquiposAdapter(val listaEquipos: ArrayList<FranNBA>) : Adapter<EquiposAdap
             tvNombreEquipo.text = equipo.nombre
             tvNickEquipo.text = equipo.nick
 
+            val colorResId = if (position % 2 == 0) {
+                R.color.confOeste
+            } else {
+                R.color.confEste
+            }
+
+            root.setBackgroundColor(ContextCompat.getColor(root.context, colorResId))
 
         }
 
@@ -54,6 +62,7 @@ class EquiposAdapter(val listaEquipos: ArrayList<FranNBA>) : Adapter<EquiposAdap
             val bundle = bundleOf("equipo" to equipo)
             Navigation.findNavController(holder.itemView).navigate(R.id.action_equipos_to_rosterFragment, bundle)
         }
+
     }
 
     override fun count(): Int {

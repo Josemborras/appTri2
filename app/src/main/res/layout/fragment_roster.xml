@@ -9,13 +9,15 @@
 
     <View
         android:id="@+id/colorBackground"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="412dp"
+        android:layout_height="380dp"
         android:background="#0079bf"
         app:layout_constraintBottom_toBottomOf="@+id/tvCampeonatos"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view2" />
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.0" />
 
     <View
         android:id="@+id/view2"
@@ -35,13 +37,23 @@
         android:layout_marginTop="16dp"
         android:text="Titulos"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="93dp"
+        android:layout_height="137dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/trofeonba"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.292"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulos" />
 
     <ImageView
         android:id="@+id/ivLogo"
@@ -57,17 +69,17 @@
 
     <TextView
         android:id="@+id/tvCampeonatos"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:text="0"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="48sp"
+        android:textSize="70sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.664"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+        app:layout_constraintTop_toTopOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.479" />
 
     <TextView
         android:id="@+id/tvRoster"
@@ -78,10 +90,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvCampeonatos"
-        app:layout_constraintVertical_bias="0.032" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulos"
+        app:layout_constraintVertical_bias="0.392" />
 
     <TextView
         android:id="@+id/textView9"
@@ -159,22 +171,13 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView2"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textView15"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView9"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="93dp"
-        android:layout_height="137dp"
-        android:layout_marginTop="12dp"
-        android:src="@drawable/trofeonba"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitulos" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

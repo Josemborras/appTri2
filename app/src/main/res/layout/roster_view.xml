@@ -7,7 +7,7 @@
 
     <TextView
         android:id="@+id/tvPlayer"
-        android:layout_width="130dp"
+        android:layout_width="115dp"
         android:layout_height="wrap_content"
         android:textAlignment="textStart"
         app:layout_constraintStart_toStartOf="@+id/view3"
@@ -15,9 +15,9 @@
 
     <TextView
         android:id="@+id/tvNum"
-        android:layout_width="15dp"
+        android:layout_width="30dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="12dp"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/tvPlayer"
         app:layout_constraintStart_toEndOf="@+id/tvPlayer" />

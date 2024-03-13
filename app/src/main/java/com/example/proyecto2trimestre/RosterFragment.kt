@@ -1,6 +1,6 @@
 package com.example.proyecto2trimestre
 
-import android.icu.text.Transliterator.Position
+import android.graphics.Color
 import android.os.Build
 import com.example.proyecto2trimestre.adaptadores.RosterAdapter
 import android.os.Bundle
@@ -9,10 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Adapter
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.proyecto2trimestre.adaptadores.EquiposAdapter
-import com.example.proyecto2trimestre.adaptadores.bostonR
 import com.example.proyecto2trimestre.dataClass.FranNBA
 import com.example.proyecto2trimestre.databinding.FragmentRosterBinding
 
@@ -49,8 +46,21 @@ class RosterFragment : Fragment() {
         equipo?.let {
             binding.tvCampeonatos.text = it.titulos.toString()
             binding.ivLogo.setImageResource(it.logo)
+            val colorInt = Color.parseColor(it.color)
+            binding.colorBackground.setBackgroundColor(colorInt)
+            when (it.nombre) {
+                "Dallas", "Atlanta", "Denver", "Charlotte", "Brooklyn", "Boston", "Houston", "LA", "Chicago", "Los Angeles","Minnesota", "New Orleans", "Miami", "Oklahoma","Milwaukee", "Phoenix", "New York","Orlando","Sacramento","Philadelphia","Utah"    -> {
+                    binding.tvCampeonatos.setTextColor(Color.WHITE)
+                    binding.tvTitulos.setTextColor(Color.WHITE)
+                }
+                // Agrega más casos según sea necesario
+                else -> {
+                    // Color por defecto o cualquier otro color deseado
+                    binding.tvCampeonatos.setTextColor(Color.BLACK)
+                    binding.tvTitulos.setTextColor(Color.BLACK)
+                }
+            }
         }
-
 
     }
 

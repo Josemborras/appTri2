@@ -2,4 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="confOeste">#9a1633</color>
+    <color name="confEste">#333a4f</color>
+
 </resources>
