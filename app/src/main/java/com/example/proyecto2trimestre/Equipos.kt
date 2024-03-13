@@ -228,104 +228,104 @@ class Equipos : Fragment() {
             Player("Jaylin Williams", "6", "PF", "6-9", "240", "6/29/2002", 21, 1)
         )
         val sunsR = listOf(
-            Player("Deandre Ayton", "2", "C", "7-0", "250", "7/23/1998", 25, 5, "Arizona"),
-            Player("Ibou Badji", "41", "C", "7-2", "230", "10/13/2002", 21, 0, "—"),
-            Player("Dalano Banton", "5", "PG", "6-8", "204", "11/7/1999", 24, 2, "Nebraska"),
-            Player("Malcolm Brogdon", "11", "PG", "6-4", "229", "12/11/1992", 31, 7, "Virginia"),
-            Player("Moses Brown", "10", "C", "7-2", "245", "10/13/1999", 24, 4, "UCLA"),
-            Player("Toumani Camara", "33", "SF", "6-7", "220", "5/8/2000", 23, 0, "Dayton"),
-            Player("Jerami Grant", "9", "PF", "6-7", "210", "3/12/1994", 30, 9, "Syracuse"),
-            Player("Ashton Hagans", "22", "PG", "6-3", "190", "7/8/1999", 24, 1, "Kentucky"),
-            Player("Scoot Henderson", "00", "PG", "6-3", "195", "2/3/2004", 20, 0, "G League Ignite"),
-            Player("Justin Minaya", "24", "SF", "6-5", "210", "3/26/1999", 24, 1, "Providence"),
-            Player("Kris Murray", "8", "PF", "6-8", "220", "8/19/2000", 23, 0, "Iowa"),
-            Player("Duop Reath", "26", "C", "6-9", "245", "6/26/1996", 27, 0, "Louisiana State"),
-            Player("Rayan Rupert", "72", "SG", "6-6", "185", "5/31/2004", 19, 0, "France"),
-            Player("Shaedon Sharpe", "17", "SG", "6-5", "200", "5/30/2003", 20, 1, "Kentucky"),
-            Player("Anfernee Simons", "1", "SG", "6-3", "181", "6/8/1999", 24, 5, "—"),
-            Player("Matisse Thybulle", "4", "SF", "6-5", "201", "3/4/1997", 27, 4, "Washington"),
-            Player("Jabari Walker", "34", "PF", "6-7", "200", "7/30/2002", 21, 1, "Colorado"),
-            Player("Robert Williams III", "35", "C", "6-9", "237", "10/17/1997", 26, 5, "Texas A&M")
+            Player("Deandre Ayton", "2", "C", "7-0", "250", "7/23/1998", 25, 5),
+            Player("Ibou Badji", "41", "C", "7-2", "230", "10/13/2002", 21, 0),
+            Player("Dalano Banton", "5", "PG", "6-8", "204", "11/7/1999", 24, 2),
+            Player("Malcolm Brogdon", "11", "PG", "6-4", "229", "12/11/1992", 31, 7),
+            Player("Moses Brown", "10", "C", "7-2", "245", "10/13/1999", 24, 4),
+            Player("Toumani Camara", "33", "SF", "6-7", "220", "5/8/2000", 23, 0),
+            Player("Jerami Grant", "9", "PF", "6-7", "210", "3/12/1994", 30, 9),
+            Player("Ashton Hagans", "22", "PG", "6-3", "190", "7/8/1999", 24, 1),
+            Player("Scoot Henderson", "00", "PG", "6-3", "195", "2/3/2004", 20, 0),
+            Player("Justin Minaya", "24", "SF", "6-5", "210", "3/26/1999", 24, 1),
+            Player("Kris Murray", "8", "PF", "6-8", "220", "8/19/2000", 23, 0),
+            Player("Duop Reath", "26", "C", "6-9", "245", "6/26/1996", 27, 0),
+            Player("Rayan Rupert", "72", "SG", "6-6", "185", "5/31/2004", 19, 0),
+            Player("Shaedon Sharpe", "17", "SG", "6-5", "200", "5/30/2003", 20, 1),
+            Player("Anfernee Simons", "1", "SG", "6-3", "181", "6/8/1999", 24, 5),
+            Player("Matisse Thybulle", "4", "SF", "6-5", "201", "3/4/1997", 27, 4),
+            Player("Jabari Walker", "34", "PF", "6-7", "200", "7/30/2002", 21, 1),
+            Player("Robert Williams III", "35", "C", "6-9", "237", "10/17/1997", 26, 5)
         )
         val utahR = listOf(
-            Player("Darius Bazley", "—", "PF", "6-8", "208", "6/12/2000", 23, 4, "—"),
-            Player("Jordan Clarkson", "00", "PG", "6-3", "194", "6/7/1992", 31, 9, "Missouri"),
-            Player("John Collins", "20", "C", "6-9", "226", "9/23/1997", 26, 6, "Wake Forest"),
-            Player("Kris Dunn", "11", "PG", "6-3", "205", "3/18/1994", 29, 7, "Providence"),
-            Player("Keyonte George", "3", "SG", "6-4", "185", "11/8/2003", 20, 0, "Baylor"),
-            Player("Taylor Hendricks", "0", "PF", "6-9", "215", "11/22/2003", 20, 0, "UCF"),
-            Player("Talen Horton-Tucker", "5", "SG", "6-4", "234", "11/25/2000", 23, 4, "Iowa St."),
-            Player("Johnny Juzang", "33", "SG", "6-5", "209", "3/17/2001", 22, 1, "UCLA"),
-            Player("Walker Kessler", "24", "C", "7-0", "245", "7/26/2001", 22, 1, "Auburn"),
-            Player("Taevion Kinsey", "22", "SG", "6-5", "190", "3/10/2000", 24, 0, "Marshall"),
-            Player("Kira Lewis Jr.", "13", "PG", "6-1", "170", "4/6/2001", 22, 3, "Alabama"),
-            Player("Kenneth Lofton Jr.", "34", "PF", "6-6", "275", "8/14/2002", 21, 1, "La. Tech"),
-            Player("Lauri Markkanen", "23", "PF", "7-0", "240", "5/22/1997", 26, 6, "Arizona"),
-            Player("Micah Potter", "25", "PF", "6-9", "248", "4/6/1998", 25, 2, "Wisconsin"),
-            Player("Jason Preston", "10", "PG", "6-3", "181", "8/10/1999", 24, 1, "Ohio"),
-            Player("Luka Samanic", "19", "PF", "6-10", "227", "1/9/2000", 24, 3, "—"),
-            Player("Brice Sensabaugh", "8", "SG", "6-5", "235", "10/30/2003", 20, 0, "Ohio St."),
-            Player("Collin Sexton", "2", "SG", "6-3", "190", "1/4/1999", 25, 5, "Alabama"),
-            Player("Omer Yurtseven", "77", "C", "6-11", "275", "6/19/1998", 25, 2, "Georgetown")
+            Player("Darius Bazley", "—", "PF", "6-8", "208", "6/12/2000", 23, 4),
+            Player("Jordan Clarkson", "00", "PG", "6-3", "194", "6/7/1992", 31, 9),
+            Player("John Collins", "20", "C", "6-9", "226", "9/23/1997", 26, 6),
+            Player("Kris Dunn", "11", "PG", "6-3", "205", "3/18/1994", 29, 7),
+            Player("Keyonte George", "3", "SG", "6-4", "185", "11/8/2003", 20, 0),
+            Player("Taylor Hendricks", "0", "PF", "6-9", "215", "11/22/2003", 20, 0),
+            Player("Talen Horton-Tucker", "5", "SG", "6-4", "234", "11/25/2000", 23, 4),
+            Player("Johnny Juzang", "33", "SG", "6-5", "209", "3/17/2001", 22, 1),
+            Player("Walker Kessler", "24", "C", "7-0", "245", "7/26/2001", 22, 1),
+            Player("Taevion Kinsey", "22", "SG", "6-5", "190", "3/10/2000", 24, 0),
+            Player("Kira Lewis Jr.", "13", "PG", "6-1", "170", "4/6/2001", 22, 3),
+            Player("Kenneth Lofton Jr.", "34", "PF", "6-6", "275", "8/14/2002", 21, 1),
+            Player("Lauri Markkanen", "23", "PF", "7-0", "240", "5/22/1997", 26, 6),
+            Player("Micah Potter", "25", "PF", "6-9", "248", "4/6/1998", 25, 2),
+            Player("Jason Preston", "10", "PG", "6-3", "181", "8/10/1999", 24, 1),
+            Player("Luka Samanic", "19", "PF", "6-10", "227", "1/9/2000", 24, 3),
+            Player("Brice Sensabaugh", "8", "SG", "6-5", "235", "10/30/2003", 20, 0),
+            Player("Collin Sexton", "2", "SG", "6-3", "190", "1/4/1999", 25, 5),
+            Player("Omer Yurtseven", "77", "C", "6-11", "275", "6/19/1998", 25, 2)
         )
         val chicacgoR = listOf(
-            Player("Lonzo Ball", "2", "PG", "6-6", "190", "10/27/1997", 26, 5, "UCLA"),
-            Player("Onuralp Bitim", "17", "SF", "6-6", "215", "3/31/1999", 24, 0, "—"),
-            Player("Jevon Carter", "5", "PG", "6-1", "200", "9/14/1995", 28, 5, "West Virginia"),
-            Player("Alex Caruso", "6", "SG", "6-5", "186", "2/28/1994", 30, 6, "Texas A&M"),
-            Player("Torrey Craig", "13", "SF", "6-5", "221", "12/19/1990", 33, 6, "South Carolina Upstate"),
-            Player("DeMar DeRozan", "11", "SF", "6-6", "220", "8/7/1989", 34, 14, "USC"),
-            Player("Ayo Dosunmu", "12", "PG", "6-5", "200", "1/17/2000", 24, 2, "Illinois"),
-            Player("Henri Drell", "77", "SF", "6-9", "215", "4/25/2000", 23, 0, "—"),
-            Player("Andre Drummond", "3", "C", "6-11", "279", "8/10/1993", 30, 11, "UConn"),
-            Player("Andrew Funk", "—", "SG", "6-5", "200", "9/21/1999", 24, 0, "Penn St."),
-            Player("Zach LaVine", "8", "SG", "6-5", "200", "3/10/1995", 29, 9, "UCLA"),
-            Player("Julian Phillips", "15", "SF", "6-8", "197", "11/5/2003", 20, 0, "Tennessee"),
-            Player("Adama Sanogo", "21", "C", "6-9", "245", "2/12/2002", 22, 0, "UConn"),
-            Player("Terry Taylor", "32", "SF", "6-4", "230", "9/23/1999", 24, 2, "Austin Peay"),
-            Player("Dalen Terry", "25", "SG", "6-7", "195", "7/12/2002", 21, 1, "Arizona"),
-            Player("Nikola Vucevic", "9", "C", "6-10", "260", "10/24/1990", 33, 12, "USC"),
-            Player("Coby White", "0", "PG", "6-5", "195", "2/16/2000", 24, 4, "N. Carolina"),
-            Player("Patrick Williams", "44", "PF", "6-7", "215", "8/26/2001", 22, 3, "Florida St.")
+            Player("Lonzo Ball", "2", "PG", "6-6", "190", "10/27/1997", 26, 5),
+            Player("Onuralp Bitim", "17", "SF", "6-6", "215", "3/31/1999", 24, 0),
+            Player("Jevon Carter", "5", "PG", "6-1", "200", "9/14/1995", 28, 5),
+            Player("Alex Caruso", "6", "SG", "6-5", "186", "2/28/1994", 30, 6),
+            Player("Torrey Craig", "13", "SF", "6-5", "221", "12/19/1990", 33, 6),
+            Player("DeMar DeRozan", "11", "SF", "6-6", "220", "8/7/1989", 34, 14),
+            Player("Ayo Dosunmu", "12", "PG", "6-5", "200", "1/17/2000", 24, 2),
+            Player("Henri Drell", "77", "SF", "6-9", "215", "4/25/2000", 23, 0),
+            Player("Andre Drummond", "3", "C", "6-11", "279", "8/10/1993", 30, 11),
+            Player("Andrew Funk", "—", "SG", "6-5", "200", "9/21/1999", 24, 0),
+            Player("Zach LaVine", "8", "SG", "6-5", "200", "3/10/1995", 29, 9),
+            Player("Julian Phillips", "15", "SF", "6-8", "197", "11/5/2003", 20, 0),
+            Player("Adama Sanogo", "21", "C", "6-9", "245", "2/12/2002", 22, 0),
+            Player("Terry Taylor", "32", "SF", "6-4", "230", "9/23/1999", 24, 2),
+            Player("Dalen Terry", "25", "SG", "6-7", "195", "7/12/2002", 21, 1),
+            Player("Nikola Vucevic", "9", "C", "6-10", "260", "10/24/1990", 33, 12),
+            Player("Coby White", "0", "PG", "6-5", "195", "2/16/2000", 24, 4),
+            Player("Patrick Williams", "44", "PF", "6-7", "215", "8/26/2001", 22, 3)
         )
         val clevelandR = listOf(
-            Player("Jarrett Allen", "31", "C", "6-9", "243", "4/21/1998", 25, 6, "Texas"),
-            Player("Emoni Bates", "21", "SF", "6-8", "170", "1/28/2004", 20, 0, "E. Michigan"),
-            Player("Sharife Cooper", "00", "PG", "6-1", "180", "6/11/2001", 22, 1, "Auburn"),
-            Player("Darius Garland", "10", "PG", "6-1", "192", "1/26/2000", 24, 4, "Vanderbilt"),
-            Player("Ty Jerome", "2", "SG", "6-5", "195", "7/8/1997", 26, 4, "Virginia"),
-            Player("Damian Jones", "30", "C", "6-10", "245", "6/30/1995", 28, 7, "Vanderbilt"),
-            Player("Caris LeVert", "3", "SG", "6-6", "205", "8/25/1994", 29, 7, "Michigan"),
-            Player("Sam Merrill", "5", "SG", "6-4", "205", "5/15/1996", 27, 3, "Utah St."),
-            Player("Donovan Mitchell", "45", "SG", "6-3", "215", "9/7/1996", 27, 6, "Louisville"),
-            Player("Evan Mobley", "4", "PF", "6-11", "215", "6/18/2001", 22, 2, "USC"),
-            Player("Isaiah Mobley", "15", "PF", "6-8", "238", "9/24/1999", 24, 1, "USC"),
-            Player("Pete Nance", "8", "PF", "6-11", "230", "2/19/2000", 24, 0, "N. Carolina"),
-            Player("Georges Niang", "20", "PF", "6-7", "230", "6/17/1993", 30, 7, "Iowa St."),
-            Player("Isaac Okoro", "35", "SF", "6-5", "225", "1/26/2001", 23, 3, "Auburn"),
-            Player("Craig Porter Jr.", "9", "PG", "6-1", "180", "2/26/2000", 24, 0, "Wichita St."),
-            Player("Zhaire Smith", "19", "SG", "6-3", "205", "6/4/1999", 24, 2, "Texas Tech"),
-            Player("Max Strus", "1", "SG", "6-5", "215", "3/28/1996", 27, 4, "DePaul"),
-            Player("Dean Wade", "32", "PF", "6-9", "228", "11/20/1996", 27, 4, "")
+            Player("Jarrett Allen", "31", "C", "6-9", "243", "4/21/1998", 25, 6),
+            Player("Emoni Bates", "21", "SF", "6-8", "170", "1/28/2004", 20, 0),
+            Player("Sharife Cooper", "00", "PG", "6-1", "180", "6/11/2001", 22, 1),
+            Player("Darius Garland", "10", "PG", "6-1", "192", "1/26/2000", 24, 4),
+            Player("Ty Jerome", "2", "SG", "6-5", "195", "7/8/1997", 26, 4),
+            Player("Damian Jones", "30", "C", "6-10", "245", "6/30/1995", 28, 7),
+            Player("Caris LeVert", "3", "SG", "6-6", "205", "8/25/1994", 29, 7),
+            Player("Sam Merrill", "5", "SG", "6-4", "205", "5/15/1996", 27, 3),
+            Player("Donovan Mitchell", "45", "SG", "6-3", "215", "9/7/1996", 27, 6),
+            Player("Evan Mobley", "4", "PF", "6-11", "215", "6/18/2001", 22, 2),
+            Player("Isaiah Mobley", "15", "PF", "6-8", "238", "9/24/1999", 24, 1),
+            Player("Pete Nance", "8", "PF", "6-11", "230", "2/19/2000", 24, 0),
+            Player("Georges Niang", "20", "PF", "6-7", "230", "6/17/1993", 30, 7),
+            Player("Isaac Okoro", "35", "SF", "6-5", "225", "1/26/2001", 23, 3),
+            Player("Craig Porter Jr.", "9", "PG", "6-1", "180", "2/26/2000", 24, 0),
+            Player("Zhaire Smith", "19", "SG", "6-3", "205", "6/4/1999", 24, 2),
+            Player("Max Strus", "1", "SG", "6-5", "215", "3/28/1996", 27, 4),
+            Player("Dean Wade", "32", "PF", "6-9", "228", "11/20/1996", 27, 4)
         )
         val pistonsR = listOf(
-            Player("Buddy Boeheim", "27", "SG", "6-6", "205", "11/11/1999", 24, 1, "Syracuse"),
-            Player("Troy Brown Jr.", "7", "SG", "6-7", "215", "7/28/1999", 24, 5, "Oregon"),
-            Player("Cade Cunningham", "2", "SG", "6-6", "220", "9/25/2001", 22, 2, "Okla. St."),
-            Player("Jalen Duren", "0", "C", "6-10", "250", "11/18/2003", 20, 1, "Memphis"),
-            Player("Tosan Evbuomwan", "18", "SF", "6-7", "217", "2/16/2001", 23, 0, "Princeton"),
-            Player("Malachi Flynn", "18", "PG", "6-1", "175", "5/9/1998", 25, 3, "San Diego St."),
-            Player("Simone Fontecchio", "19", "SF", "6-7", "209", "12/9/1995", 28, 1, ""),
-            Player("Evan Fournier", "31", "SG", "6-6", "205", "10/29/1992", 31, 11, ""),
-            Player("Taj Gibson", "67", "C", "6-9", "232", "6/24/1985", 38, 14, "USC"),
-            Player("Quentin Grimes", "24", "SG", "6-5", "210", "5/8/2000", 23, 2, "Houston"),
-            Player("Jaden Ivey", "23", "SG", "6-4", "195", "2/13/2002", 22, 1, "Purdue"),
-            Player("Jared Rhoden", "8", "SG", "6-5", "210", "8/27/1999", 24, 1, "Seton Hall"),
-            Player("Marcus Sasser", "25", "PG", "6-2", "195", "9/21/2000", 23, 0, "Houston"),
-            Player("Isaiah Stewart", "28", "PF", "6-8", "250", "5/22/2001", 22, 3, "Washington"),
-            Player("Ausar Thompson", "9", "SF", "6-6", "205", "1/30/2003", 21, 0, "Overtime Elite"),
-            Player("Stanley Umude", "17", "SG", "6-6", "210", "4/12/1999", 24, 1, "Arkansas"),
-            Player("James Wiseman", "13", "C", "6-11", "240", "3/31/2001", 22, 2, "Memphis")
+            Player("Buddy Boeheim", "27", "SG", "6-6", "205", "11/11/1999", 24, 1),
+            Player("Troy Brown Jr.", "7", "SG", "6-7", "215", "7/28/1999", 24, 5),
+            Player("Cade Cunningham", "2", "SG", "6-6", "220", "9/25/2001", 22, 2),
+            Player("Jalen Duren", "0", "C", "6-10", "250", "11/18/2003", 20, 1),
+            Player("Tosan Evbuomwan", "18", "SF", "6-7", "217", "2/16/2001", 23, 0),
+            Player("Malachi Flynn", "18", "PG", "6-1", "175", "5/9/1998", 25, 3),
+            Player("Simone Fontecchio", "19", "SF", "6-7", "209", "12/9/1995", 28, 1),
+            Player("Evan Fournier", "31", "SG", "6-6", "205", "10/29/1992", 31, 11),
+            Player("Taj Gibson", "67", "C", "6-9", "232", "6/24/1985", 38, 14),
+            Player("Quentin Grimes", "24", "SG", "6-5", "210", "5/8/2000", 23, 2),
+            Player("Jaden Ivey", "23", "SG", "6-4", "195", "2/13/2002", 22, 1),
+            Player("Jared Rhoden", "8", "SG", "6-5", "210", "8/27/1999", 24, 1),
+            Player("Marcus Sasser", "25", "PG", "6-2", "195", "9/21/2000", 23, 0),
+            Player("Isaiah Stewart", "28", "PF", "6-8", "250", "5/22/2001", 22, 3),
+            Player("Ausar Thompson", "9", "SF", "6-6", "205", "1/30/2003", 21, 0),
+            Player("Stanley Umude", "17", "SG", "6-6", "210", "4/12/1999", 24, 1),
+            Player("James Wiseman", "13", "C", "6-11", "240", "3/31/2001", 22, 2)
         )
         val pacersR = listOf(
             Player("Kendall Brown", "10", "SF", "6-7", "205", "5/11/2003", 20, 1, "Baylor"),
@@ -590,53 +590,45 @@ class Equipos : Fragment() {
             Player("Cody Zeller", "40", "C", "6-11", "240", "10/5/1992", 31, 10, "Indiana")
         )
         val spursR = listOf(
-            Player("Dom Barlow", "26", "PF", "6-9", "215", "5/26/2003", 20, 1, "Overtime Elite"),
-            Player("Charles Bassey", "28", "C", "6-10", "230", "10/28/2000", 23, 2, "W. Kentucky"),
-            Player("Jamaree Bouyea", "—", "PG", "6-2", "180", "6/27/1999", 24, 1, "San Fran."),
-            Player("Malaki Branham", "22", "SG", "6-4", "180", "5/12/2003", 20, 1, "Ohio St."),
-            Player("Julian Champagnie", "30", "SF", "6-7", "217", "6/29/2001", 22, 1, "St. John's"),
-            Player("Sidy Cissoko", "25", "SF", "6-5", "224", "4/2/2004", 19, 0, "G League Ignite"),
-            Player("Zach Collins", "23", "C", "6-11", "250", "11/19/1997", 26, 5, "Gonzaga"),
-            Player("David Duke Jr.", "7", "PG", "6-4", "204", "10/13/1999", 24, 2, "Providence"),
-            Player("Devonte' Graham", "4", "PG", "6-1", "195", "2/22/1995", 29, 5, "Kansas"),
-            Player("RaiQuan Gray", "41", "PF", "6-7", "260", "7/7/1999", 24, 1, "Florida St."),
-            Player("Keldon Johnson", "3", "SF", "6-5", "220", "10/11/1999", 24, 4, "Kentucky"),
-            Player("Tre Jones", "33", "PG", "6-1", "185", "1/8/2000", 24, 3, "Duke"),
-            Player("Sandro Mamukelashvili", "54", "PF", "6-9", "240", "5/23/1999", 24, 2, "Seton Hall"),
-            Player("Cedi Osman", "16", "SF", "6-7", "230", "4/8/1995", 28, 6, "—"),
-            Player("Jeremy Sochan", "10", "SF", "6-8", "230", "5/20/2003", 20, 1, "Baylor"),
-            Player("Devin Vassell", "24", "SG", "6-5", "200", "8/23/2000", 23, 3, "Florida St."),
-            Player("Victor Wembanyama", "1", "C", "7-4", "210", "1/4/2004", 20, 0, "France"),
-            Player("Blake Wesley", "14", "SG", "6-3", "185", "3/16/2003", 20, 1, "Notre Dame")
+            Player("Dom Barlow", "26", "PF", "6-9", "215", "5/26/2003", 20, 1),
+            Player("Charles Bassey", "28", "C", "6-10", "230", "10/28/2000", 23, 2),
+            Player("Jamaree Bouyea", "—", "PG", "6-2", "180", "6/27/1999", 24, 1),
+            Player("Malaki Branham", "22", "SG", "6-4", "180", "5/12/2003", 20, 1),
+            Player("Julian Champagnie", "30", "SF", "6-7", "217", "6/29/2001", 22, 1),
+            Player("Sidy Cissoko", "25", "SF", "6-5", "224", "4/2/2004", 19, 0),
+            Player("Zach Collins", "23", "C", "6-11", "250", "11/19/1997", 26, 5),
+            Player("David Duke Jr.", "7", "PG", "6-4", "204", "10/13/1999", 24, 2),
+            Player("Devonte' Graham", "4", "PG", "6-1", "195", "2/22/1995", 29, 5),
+            Player("RaiQuan Gray", "41", "PF", "6-7", "260", "7/7/1999", 24, 1),
+            Player("Keldon Johnson", "3", "SF", "6-5", "220", "10/11/1999", 24, 4),
+            Player("Tre Jones", "33", "PG", "6-1", "185", "1/8/2000", 24, 3),
+            Player("Sandro Mamukelashvili", "54", "PF", "6-9", "240", "5/23/1999", 24, 2),
+            Player("Cedi Osman", "16", "SF", "6-7", "230", "4/8/1995", 28, 6),
+            Player("Jeremy Sochan", "10", "SF", "6-8", "230", "5/20/2003", 20, 1),
+            Player("Devin Vassell", "24", "SG", "6-5", "200", "8/23/2000", 23, 3),
+            Player("Victor Wembanyama", "1", "C", "7-4", "210", "1/4/2004", 20, 0),
+            Player("Blake Wesley", "14", "SG", "6-3", "185", "3/16/2003", 20, 1)
         )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        val blazzersR = listOf(
+            Player("Deandre Ayton", "2", "C", "7-0", "250", "7/23/1998", 25, 5),
+            Player("Ibou Badji", "41", "C", "7-2", "230", "10/13/2002", 21, 0),
+            Player("Dalano Banton", "5", "PG", "6-8", "204", "11/7/1999", 24, 2),
+            Player("Malcolm Brogdon", "11", "PG", "6-4", "229", "12/11/1992", 31, 7),
+            Player("Moses Brown", "10", "C", "7-2", "245", "10/13/1999", 24, 4),
+            Player("Toumani Camara", "33", "SF", "6-7", "220", "5/8/2000", 23, 0),
+            Player("Jerami Grant", "9", "PF", "6-7", "210", "3/12/1994", 30, 9),
+            Player("Ashton Hagans", "22", "PG", "6-3", "190", "7/8/1999", 24, 1),
+            Player("Scoot Henderson", "00", "PG", "6-3", "195", "2/3/2004", 20, 0),
+            Player("Justin Minaya", "24", "SF", "6-5", "210", "3/26/1999", 24, 1),
+            Player("Kris Murray", "8", "PF", "6-8", "220", "8/19/2000", 23, 0),
+            Player("Duop Reath", "26", "C", "6-9", "245", "6/26/1996", 27, 0),
+            Player("Rayan Rupert", "72", "SG", "6-6", "185", "5/31/2004", 19, 0),
+            Player("Shaedon Sharpe", "17", "SG", "6-5", "200", "5/30/2003", 20, 1),
+            Player("Anfernee Simons", "1", "SG", "6-3", "181", "6/8/1999", 24, 5),
+            Player("Matisse Thybulle", "4", "SF", "6-5", "201", "3/4/1997", 27, 4),
+            Player("Jabari Walker", "34", "PF", "6-7", "200", "7/30/2002", 21, 1),
+            Player("Robert Williams III", "35", "C", "6-9", "237", "10/17/1997", 26, 5)
+        )
 
 
 
@@ -644,36 +636,36 @@ class Equipos : Fragment() {
 
         val listaEquipos = ArrayList<FranNBA>()
 
-        val atlanta = FranNBA(R.drawable.atlanta,"Atlanta","Hawks", 0,"este","#e8022c", roster = bostonR)
-        val dallas = FranNBA(R.drawable.dallas,"Dallas","Mavericks",1, "oeste","#0079bf", roster = bostonR)
+        val atlanta = FranNBA(R.drawable.atlanta,"Atlanta","Hawks", 0,"este","#e8022c", roster = atlantaR)
+        val dallas = FranNBA(R.drawable.dallas,"Dallas","Mavericks",1, "oeste","#0079bf", roster = dallasR)
         val boston = FranNBA(R.drawable.boston,"Boston","Celtics",17, "este" ,"#007f47", roster = bostonR)
-        val denver = FranNBA(R.drawable.denver,"Denver","Nuggets", 1,"oeste","#0d203e", roster = bostonR)
-        val brooklyn = FranNBA(R.drawable.brooklyn,"Brooklyn","Nets", 0,"este","#091923", roster = bostonR)
-        val golden = FranNBA(R.drawable.golden_state_warriors,"Golden State","Warriors",7,"#1a3b8e","oeste", roster = bostonR)
-        val charlotte = FranNBA(R.drawable.charlotte,"Charlotte","Hornets",0, "este","#0088a3", roster = bostonR)
-        val houston = FranNBA(R.drawable.houston_rockets_seeklogo,"Houston","Rockets",2, "oeste","#d81f30", roster = bostonR)
-        val chicago = FranNBA(R.drawable.chicago,"Chicago","Bulls",6, "este","#bf041f", roster = bostonR)
-        val clippers = FranNBA(R.drawable.clippers,"LA","Clippers",0, "oeste","#1c4085", roster = bostonR)
-        val cleveland = FranNBA(R.drawable.cleveland,"Cleveland","Cavaliers",1, "este","#6f243a", roster = bostonR)
-        val lakers = FranNBA(R.drawable.lakers,"Los Angeles","Lakers",17, "oeste","#30016e", roster = bostonR)
-        val detroit = FranNBA(R.drawable.pistons,"Detroit","Pistons", 3,"este","#f8f8f8", roster = bostonR)
-        val memphis = FranNBA(R.drawable.memphis,"Memphis","Grizzlies",0, "oeste","#6ca5de", roster = bostonR)
-        val indiana = FranNBA(R.drawable.indiana_pacers_seeklogo,"Indiana","Pacers",0, "este","#002c5f", roster = bostonR)
-        val minesota = FranNBA(R.drawable.minnesota,"Minnesota","Timberwolves",0, "oeste","#024d82", roster = bostonR)
-        val miami = FranNBA(R.drawable.miami,"Miami","Heat",3,"este","#94012d", roster = bostonR)
-        val newOrleans = FranNBA(R.drawable.new_orleans,"New Orleans","Pelicans",0, "oeste","#562e5a", roster = bostonR)
-        val milwaukee = FranNBA(R.drawable.milwakeu,"Milwaukee","Bucks",2, "este","#004519", roster = bostonR)
-        val oklahoma = FranNBA(R.drawable.okc,"Oklahoma City","Thunder",0, "oeste","#012d60", roster = bostonR)
-        val newYork = FranNBA(R.drawable.knicks,"New York","Knicks",2, "este","#12479c", roster = bostonR)
-        val phoenix = FranNBA(R.drawable.phoenix,"Phoenix","Suns",0, "oeste","#443877", roster = bostonR)
-        val orlando = FranNBA(R.drawable.orlando,"Orlando","Magic",0, "este","#0372ba", roster = bostonR)
-        val portland = FranNBA(R.drawable.portland,"Portland","Trail Blazzers",0, "oeste","#bf0e27", roster = bostonR)
-        val phili = FranNBA(R.drawable.phili,"Philadelphia","76ers",2, "este","#e70b2d", roster = bostonR)
-        val sacramento = FranNBA(R.drawable.sacramento,"Sacramento","Kings",0, "oeste","#341c74", roster = bostonR)
-        val toronto = FranNBA(R.drawable.toronto,"Toronto","Raptors",1, "este","#eb3d3c", roster = bostonR)
-        val sanAntonio = FranNBA(R.drawable.san_antonio,"San Antonio","Spurs",5, "oeste","#bbc3ca", roster = bostonR)
-        val washington = FranNBA(R.drawable.wizards,"Washington","Wizards",1, "este","#f8f8f8", roster = bostonR)
-        val utah = FranNBA(R.drawable.utah,"Utah","Jazz",0, "oeste","#66578c", roster = bostonR)
+        val denver = FranNBA(R.drawable.denver,"Denver","Nuggets", 1,"oeste","#0d203e", roster = nuggetsR)
+        val brooklyn = FranNBA(R.drawable.brooklyn,"Brooklyn","Nets", 0,"este","#091923", roster = brooklynR)
+        val golden = FranNBA(R.drawable.golden_state_warriors,"Golden State","Warriors",7,"#1a3b8e","oeste", roster = warriorsR)
+        val charlotte = FranNBA(R.drawable.charlotte,"Charlotte","Hornets",0, "este","#0088a3", roster = hornetsR)
+        val houston = FranNBA(R.drawable.houston_rockets_seeklogo,"Houston","Rockets",2, "oeste","#d81f30", roster = rocketsR)
+        val chicago = FranNBA(R.drawable.chicago,"Chicago","Bulls",6, "este","#bf041f", roster = chicacgoR)
+        val clippers = FranNBA(R.drawable.clippers,"LA","Clippers",0, "oeste","#1c4085", roster = clippersR)
+        val cleveland = FranNBA(R.drawable.cleveland,"Cleveland","Cavaliers",1, "este","#6f243a", roster = clevelandR)
+        val lakers = FranNBA(R.drawable.lakers,"Los Angeles","Lakers",17, "oeste","#30016e", roster = lakersR)
+        val detroit = FranNBA(R.drawable.pistons,"Detroit","Pistons", 3,"este","#f8f8f8", roster = pistonsR)
+        val memphis = FranNBA(R.drawable.memphis,"Memphis","Grizzlies",0, "oeste","#6ca5de", roster = grizzliesR)
+        val indiana = FranNBA(R.drawable.indiana_pacers_seeklogo,"Indiana","Pacers",0, "este","#002c5f", roster = pacersR)
+        val minesota = FranNBA(R.drawable.minnesota,"Minnesota","Timberwolves",0, "oeste","#024d82", roster = timberwolvesR)
+        val miami = FranNBA(R.drawable.miami,"Miami","Heat",3,"este","#94012d", roster = heatR)
+        val newOrleans = FranNBA(R.drawable.new_orleans,"New Orleans","Pelicans",0, "oeste","#562e5a", roster = pelicansR)
+        val milwaukee = FranNBA(R.drawable.milwakeu,"Milwaukee","Bucks",2, "este","#004519", roster = bucksR)
+        val oklahoma = FranNBA(R.drawable.okc,"Oklahoma City","Thunder",0, "oeste","#012d60", roster = thunderR)
+        val newYork = FranNBA(R.drawable.knicks,"New York","Knicks",2, "este","#12479c", roster = newyorkR)
+        val phoenix = FranNBA(R.drawable.phoenix,"Phoenix","Suns",0, "oeste","#443877", roster = sunsR)
+        val orlando = FranNBA(R.drawable.orlando,"Orlando","Magic",0, "este","#0372ba", roster = magicR)
+        val portland = FranNBA(R.drawable.portland,"Portland","Trail Blazzers",0, "oeste","#bf0e27", roster = blazzersR)
+        val phili = FranNBA(R.drawable.phili,"Philadelphia","76ers",2, "este","#e70b2d", roster = sixersR)
+        val sacramento = FranNBA(R.drawable.sacramento,"Sacramento","Kings",0, "oeste","#341c74", roster = kingsR)
+        val toronto = FranNBA(R.drawable.toronto,"Toronto","Raptors",1, "este","#eb3d3c", roster = raptorsR)
+        val sanAntonio = FranNBA(R.drawable.san_antonio,"San Antonio","Spurs",5, "oeste","#bbc3ca", roster = spursR)
+        val washington = FranNBA(R.drawable.wizards,"Washington","Wizards",1, "este","#f8f8f8", roster = wizzardsR)
+        val utah = FranNBA(R.drawable.utah,"Utah","Jazz",0, "oeste","#66578c", roster = utahR)
 
         listaEquipos.add(dallas)
         listaEquipos.add(atlanta)
