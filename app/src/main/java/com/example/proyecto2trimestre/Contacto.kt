@@ -1,9 +1,9 @@
 package com.example.proyecto2trimestre
 
-import android.os.Bundle
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.net.Uri
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -28,29 +28,25 @@ class Contacto : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        setupContactButtons()
+        botonesContacto()
         setupSubmitButton()
     }
 
-    private fun setupContactButtons() {
-        // Botones de correo
+    private fun botonesContacto() {
         binding.cvCorreo.setOnClickListener {
             sendEmail("info@escuelaestech.es")
         }
 
-        // Botón teléfono
         binding.cvTelefono.setOnClickListener {
-            dialPhoneNumber("953636000")
+            dialPhoneNumber("+34 953636000")
         }
 
-        // Botón de ubicación
         binding.cvLocalizacion.setOnClickListener {
             openGoogleMapsLocation()
         }
 
-        // Botón de WhatsApp
         binding.cvWhatsapp.setOnClickListener {
-            openWhatsAppChat("697246008")
+            openWhatsAppChat("+34 697246008")
         }
     }
 
@@ -66,19 +62,14 @@ class Contacto : Fragment() {
     }
 
     private fun isFormValid(): Boolean {
-        // Verificar si los campos están llenos
         val nombre = binding.textInputLayout.editText?.text.toString().trim()
         val correo = binding.textInputLayout2.editText?.text.toString().trim()
         val telefono = binding.textInputLayout3.editText?.text.toString().trim()
 
         if (nombre.isEmpty() || correo.isEmpty() || telefono.isEmpty()) {
-            // Mostrar Toast si algún campo está vacío
             Toast.makeText(requireContext(), "Debes rellenar todos los campos", Toast.LENGTH_SHORT).show()
             return false
         }
-
-        // Agrega aquíis la lógica para validar el formato del correo electrónico si lo deseas
-
         return true
     }
 
@@ -97,16 +88,37 @@ class Contacto : Fragment() {
     }
 
     private fun sendFormByEmail() {
-        // Aquí debes agregar la lógica para enviar el formulario por correo electrónico
+        val nombre = binding.tNombre.text.toString()
+        val correo = binding.tCorreo.text.toString()
+        val telefono = binding.tTelefono.text.toString()
+        val checkBox = binding.checkBox
+
+        if ((nombre.isNotEmpty() && correo.isNotEmpty() && telefono.isNotEmpty() && checkBox.isChecked) && (formatoEmail(correo))) {
+
+            val intent = Intent(Intent.ACTION_SEND)
+            intent.type = "text/plain"
+            intent.putExtra(Intent.EXTRA_EMAIL, arrayOf("destinatario@example.com"))
+            intent.putExtra(Intent.EXTRA_SUBJECT, "Asunto del correo")
+            intent.putExtra(Intent.EXTRA_TEXT, "Nombre: $nombre\nCorreo electrónico: $correo\nTeléfono: $telefono")
+
+            try {
+                startActivity(Intent.createChooser(intent, "Enviar correo"))
+            } catch (_: ActivityNotFoundException) {
+
+            }
+        } else {
+            Toast.makeText(requireContext(), "Debes rellenar todos los campos y marcar el checkbox", Toast.LENGTH_SHORT).show()
+        }
     }
+
 
     private fun sendEmail(email: String) {
         val intent = Intent(Intent.ACTION_SENDTO)
         intent.data = Uri.parse("mailto:$email")
         try {
             startActivity(intent)
-        } catch (e: ActivityNotFoundException) {
-            // Maneja la excepción si no hay ninguna aplicación de correo instalada
+        } catch (_: ActivityNotFoundException) {
+
         }
     }
 
@@ -115,31 +127,20 @@ class Contacto : Fragment() {
         intent.data = Uri.parse("tel:$phoneNumber")
         try {
             startActivity(intent)
-        } catch (e: ActivityNotFoundException) {
-            // Maneja la excepción si no hay ninguna aplicación de teléfono instalada
+        } catch (_: ActivityNotFoundException) {
+
         }
     }
 
     private fun openGoogleMapsLocation() {
-        // Dirección que se abrirá en Google Maps
-        val address = "C/ San Joaquín, 12, 23700 Linares (Jaén)"
+        val intent = Intent(
+            Intent.ACTION_VIEW,
+            Uri.parse("geo:38.0942672,-3.631339?q=Escuela+Estech")
+        )
+        intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity")
+        startActivity(intent)
 
-        // Crear un URI con la dirección
-        val uri = Uri.parse("geo:0,0?q=$address")
 
-        // Crear un intent con la acción ACTION_VIEW y el URI de la dirección
-        val mapIntent = Intent(Intent.ACTION_VIEW, uri)
-
-        // Verificar si la aplicación de Google Maps está instalada
-        mapIntent.setPackage("com.google.android.apps.maps")
-
-        // Comprobar si hay una actividad que pueda manejar el intent
-        if (mapIntent.resolveActivity(requireActivity().packageManager) != null) {
-            startActivity(mapIntent)
-        } else {
-            // Manejar la situación donde la aplicación de Google Maps no está instalada
-            // Puedes mostrar un mensaje de error o abrir la página de Google Maps en un navegador web
-        }
     }
 
     private fun openWhatsAppChat(phoneNumber: String) {
@@ -151,9 +152,9 @@ class Contacto : Fragment() {
             // Maneja la excepción si no hay ninguna aplicación de WhatsApp instalada
         }
     }
-    private fun isEmailValid(email: String): Boolean {
-        val pattern = Patterns.EMAIL_ADDRESS
-        return pattern.matcher(email).matches()
+    private fun formatoEmail(email: String): Boolean {
+        val pattern = Regex("^\\w+([.-]?\\w+)*@\\w+([.-]?\\w+)*(\\.\\w{2,})+$")
+        return pattern.matches(email)
     }
 
 

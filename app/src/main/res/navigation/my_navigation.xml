@@ -3,35 +3,42 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_navigation"
-    app:startDestination="@id/inicio">
+    app:startDestination="@id/Inicio">
 
     <fragment
-        android:id="@+id/inicio"
+        android:id="@+id/Inicio"
         android:name="com.example.proyecto2trimestre.Inicio"
         android:label="inicio"
-        tools:layout="@layout/inicio_activity" />
+        tools:layout="@layout/inicio_activity" >
+        <action
+            android:id="@+id/action_Inicio_to_Equipos"
+            app:destination="@id/Equipos" />
+    </fragment>
     <fragment
-        android:id="@+id/partidos"
+        android:id="@+id/Partidos"
         android:name="com.example.proyecto2trimestre.Partidos"
         android:label="partidos"
         tools:layout="@layout/partidos_fragment" >
         <action
             android:id="@+id/action_partidos_to_contacto"
-            app:destination="@id/contacto" />
+            app:destination="@id/Contacto" />
     </fragment>
     <fragment
-        android:id="@+id/contacto"
+        android:id="@+id/Contacto"
         android:name="com.example.proyecto2trimestre.Contacto"
         android:label="contacto"
         tools:layout="@layout/contacto_fragment" />
     <fragment
-        android:id="@+id/equipos"
+        android:id="@+id/Equipos"
         android:name="com.example.proyecto2trimestre.Equipos"
         android:label="equipos"
-        tools:layout="@layout/equipos_fragment" >
+        tools:layout="@layout/equipos_fragment">
         <action
             android:id="@+id/action_equipos_to_rosterFragment"
             app:destination="@id/rosterFragment" />
+        <action
+            android:id="@+id/action_Equipos_to_Partidos"
+            app:destination="@id/Partidos" />
     </fragment>
     <fragment
         android:id="@+id/rosterFragment"

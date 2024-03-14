@@ -59,6 +59,7 @@ class EquiposAdapter(val listaEquipos: ArrayList<FranNBA>) : Adapter<EquiposAdap
 
 
         holder.itemView.setOnClickListener {
+            val bundleNombre = bundleOf("nombreEquipo" to equipo.nombre)
             val bundle = bundleOf("equipo" to equipo)
             Navigation.findNavController(holder.itemView).navigate(R.id.action_equipos_to_rosterFragment, bundle)
         }

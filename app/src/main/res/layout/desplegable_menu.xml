@@ -19,7 +19,8 @@
             android:layout_height="wrap_content"
             android:background="?attr/colorPrimary"
             android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme"
+            android:theme="@style/ToolbarIconColor"
+            app:titleTextColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -37,6 +38,17 @@
             app:navGraph="@navigation/my_navigation"
             tools:ignore="MissingConstraints" />
 
+        <Button
+            android:id="@+id/btLogout"
+            android:layout_width="64dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="3dp"
+            app:icon="@drawable/baseline_logout_24"
+            app:layout_constraintBottom_toTopOf="@+id/fcwDesplegable"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.navigation.NavigationView
@@ -46,5 +58,8 @@
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/header_menu"
-        app:menu="@menu/menu_lateral" />
+        app:menu="@menu/menu_lateral" >
+
+    </com.google.android.material.navigation.NavigationView>
+
 </androidx.drawerlayout.widget.DrawerLayout>

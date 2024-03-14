@@ -2,30 +2,27 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/inicio"
+        android:id="@+id/Inicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:icon="@drawable/inicio"
         android:title="Inicio" />
     <item
-        android:id="@+id/partidos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:icon="@drawable/calendario"
-        android:title="Partidos" />
-    <item
-        android:id="@+id/equipos"
+        android:id="@+id/Equipos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:icon="@drawable/grafico_de_barras"
         android:title="Equipos" />
     <item
-        android:id="@+id/contacto"
+        android:id="@+id/Partidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/calendario"
+        android:title="Partidos" />
+    <item
+        android:id="@+id/Contacto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:icon="@drawable/chat"
         android:title="Contacto" />
-    <item
-        android:id="@+id/EquipoDetalle"
-        android:title="EquipoDetalle" />
 </menu>

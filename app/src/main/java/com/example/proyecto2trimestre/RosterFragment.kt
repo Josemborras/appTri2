@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Adapter
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.proyecto2trimestre.dataClass.FranNBA
 import com.example.proyecto2trimestre.databinding.FragmentRosterBinding
@@ -42,6 +43,12 @@ class RosterFragment : Fragment() {
         val adaptador = equipo?.roster?.let { RosterAdapter(it) }
         binding.recyclerView2.layoutManager = LinearLayoutManager(requireContext())
         binding.recyclerView2.adapter = adaptador
+
+        val nombreEquipo = equipo?.nombre + " " + equipo?.nick
+
+
+
+        (requireActivity() as AppCompatActivity).supportActionBar?.title = nombreEquipo
 
         equipo?.let {
             binding.tvCampeonatos.text = it.titulos.toString()

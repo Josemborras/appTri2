@@ -1,11 +1,14 @@
 package com.example.proyecto2trimestre
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.constraintlayout.helper.widget.Carousel.Adapter
 import androidx.fragment.app.Fragment
+import androidx.navigation.NavDirections
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.proyecto2trimestre.adaptadores.EquiposAdapter
 import com.example.proyecto2trimestre.dataClass.FranNBA
@@ -704,6 +707,16 @@ class Equipos : Fragment() {
         binding.rvEquipos.layoutManager = layoutManager
         binding.rvEquipos.adapter = equiposAdapter as EquiposAdapter
 
+
+    }
+    private fun navigateToRosterFragment(nombreEquipo: String) {
+        val intent = Intent(requireContext(), RosterFragment::class.java).apply {
+            putExtra("nombreEquipo", nombreEquipo)
+        }
+        startActivity(intent)
+    }
+    private fun onEquipoSelected(nombreEquipo: String) {
+        navigateToRosterFragment(nombreEquipo)
     }
 }
 

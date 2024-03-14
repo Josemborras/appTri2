@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.proyecto2trimestre.adaptadores.DeslizanteAdapter
 import com.example.proyecto2trimestre.adaptadores.PartidosAdapter
 import com.example.proyecto2trimestre.databinding.PartidosFragmentBinding
 
@@ -42,9 +43,12 @@ class Partidos : Fragment() {
         val adapter = PartidosAdapter(galeria)
         binding.viewPager2.adapter = adapter
 
+        val adapterDeslizante = DeslizanteAdapter(galeria)
+
         val layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         binding.recyclerViewPartidos.layoutManager = layoutManager
-        binding.recyclerViewPartidos.adapter = adapter
+        binding.recyclerViewPartidos.adapter = adapterDeslizante
+
 
 
     }
