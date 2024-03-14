@@ -26,17 +26,16 @@ class Partidos : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val galeria = ArrayList<Int>()
-        galeria.add(R.drawable.anteto)
-        galeria.add(R.drawable.durant)
-        galeria.add(R.drawable.jimmy_butler)
-        galeria.add(R.drawable.jokic)
-        galeria.add(R.drawable.tatum)
-        galeria.add(R.drawable.partido1)
-        galeria.add(R.drawable.partido2)
-        galeria.add(R.drawable.partido3)
-        galeria.add(R.drawable.partido4)
-        galeria.add(R.drawable.partido5)
-        galeria.add(R.drawable.partido6)
+        galeria.add(R.drawable._6ers_bucks)
+        galeria.add(R.drawable.clippers_bulls)
+        galeria.add(R.drawable.dallas_thunder)
+        galeria.add(R.drawable.newyork_portland)
+        galeria.add(R.drawable.phoenix_boston)
+        galeria.add(R.drawable.atlanta_jazz)
+        galeria.add(R.drawable.nets_pacers)
+        galeria.add(R.drawable.nuggets_spurs)
+        galeria.add(R.drawable.warriors_lakers)
+
 
 
 
@@ -49,7 +48,9 @@ class Partidos : Fragment() {
         binding.recyclerViewPartidos.layoutManager = layoutManager
         binding.recyclerViewPartidos.adapter = adapterDeslizante
 
-
+        adapterDeslizante.setOnImageClickListener { position ->
+            binding.viewPager2.setCurrentItem(position, true)
+        }
 
     }
 }

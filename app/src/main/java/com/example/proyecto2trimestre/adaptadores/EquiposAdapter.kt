@@ -52,9 +52,7 @@ class EquiposAdapter(val listaEquipos: ArrayList<FranNBA>) : Adapter<EquiposAdap
 
         }
 
-        Glide.with(holder.itemView)
-            .load(equipo.logo)
-            .into(holder.binding.ivLogoEquipo)
+        holder.binding.ivLogoEquipo.setImageResource(equipo.logo)
 
 
 

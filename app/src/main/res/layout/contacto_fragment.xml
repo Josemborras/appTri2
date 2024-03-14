@@ -32,8 +32,9 @@
 
             <ImageView
                 android:id="@+id/imageView2"
-                android:layout_width="81dp"
-                android:layout_height="match_parent"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
                 android:src="@drawable/localizacion__1_"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -84,8 +85,9 @@
 
             <ImageView
                 android:id="@+id/imageView3"
-                android:layout_width="80dp"
-                android:layout_height="match_parent"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
                 android:src="@drawable/correo_electronico__1_"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -144,8 +146,9 @@
 
                 <ImageView
                     android:id="@+id/imageView4"
-                    android:layout_width="80dp"
-                    android:layout_height="100dp"
+                    android:layout_width="60dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="16dp"
                     android:src="@drawable/manzana"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -173,8 +176,9 @@
 
             <ImageView
                 android:id="@+id/imageView5"
-                android:layout_width="81dp"
-                android:layout_height="match_parent"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
                 android:src="@drawable/whatsapp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

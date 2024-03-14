@@ -1,8 +1,11 @@
 package com.example.proyecto2trimestre
 
 import android.content.DialogInterface
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.navigation.NavController
@@ -23,8 +26,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DesplegableMenuBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-
 
 
         val navHost = supportFragmentManager.findFragmentById(R.id.fcwDesplegable) as NavHost
@@ -52,32 +53,35 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-
-
-
         val username = intent.getStringExtra("username")
-
 
         binding.nvDesplegable.getHeaderView(0).findViewById<TextView>(R.id.tvUser).text = username
 
-        binding.btLogout.setOnClickListener{
-            val builder = AlertDialog.Builder(this)
+    }
+    override fun onSupportNavigateUp() = navController.navigateUp(appBarConfiguration)
+
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.log_out_menu, menu)
+        return true
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.log_out-> {
+                val builder = AlertDialog.Builder(this)
             builder.setTitle("Confirmar logout")
             builder.setMessage("¿Estás seguro de que deseas cerrar sesión?")
             builder.setPositiveButton("Aceptar") { _: DialogInterface, _: Int ->
-                // Aquí redirige al usuario a la pantalla de login
-                // por ejemplo:
-                // startActivity(Intent(this, LoginActivity::class.java))
+               startActivity(Intent(this, LoginActivity::class.java))
             }
             builder.setNegativeButton("Cancelar") { dialog: DialogInterface, _: Int ->
                 dialog.dismiss()
             }
             val dialog = builder.create()
             dialog.show()
+                return true
+            }
+            else -> return super.onOptionsItemSelected(item)
         }
-
     }
-    override fun onSupportNavigateUp() = navController.navigateUp(appBarConfiguration)
-
-
 }
