@@ -69,7 +69,7 @@ class MainActivity : AppCompatActivity() {
         when (item.itemId) {
             R.id.log_out-> {
                 val builder = AlertDialog.Builder(this)
-            builder.setTitle("Confirmar logout")
+            builder.setTitle("Cerrar sesión")
             builder.setMessage("¿Estás seguro de que deseas cerrar sesión?")
             builder.setPositiveButton("Aceptar") { _: DialogInterface, _: Int ->
                startActivity(Intent(this, LoginActivity::class.java))
