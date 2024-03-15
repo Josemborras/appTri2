@@ -93,18 +93,22 @@ class Contacto : Fragment() {
         val telefono = binding.tTelefono.text.toString()
         val checkBox = binding.checkBox
 
-        if ((nombre.isNotEmpty() && correo.isNotEmpty() && telefono.isNotEmpty() && checkBox.isChecked) && (formatoEmail(correo))) {
+        if ((nombre.isNotEmpty() && correo.isNotEmpty() && telefono.isNotEmpty() && checkBox.isChecked)) {
 
-            val intent = Intent(Intent.ACTION_SEND)
-            intent.type = "text/plain"
-            intent.putExtra(Intent.EXTRA_EMAIL, arrayOf("destinatario@example.com"))
-            intent.putExtra(Intent.EXTRA_SUBJECT, "Asunto del correo")
-            intent.putExtra(Intent.EXTRA_TEXT, "Nombre: $nombre\nCorreo electrónico: $correo\nTeléfono: $telefono")
+            if (formatoEmail(correo)){
+                val intent = Intent(Intent.ACTION_SEND)
+                intent.type = "text/plain"
+                intent.putExtra(Intent.EXTRA_EMAIL, arrayOf("destinatario@example.com"))
+                intent.putExtra(Intent.EXTRA_SUBJECT, "Asunto del correo")
+                intent.putExtra(Intent.EXTRA_TEXT, "Nombre: $nombre\nCorreo electrónico: $correo\nTeléfono: $telefono")
 
-            try {
-                startActivity(Intent.createChooser(intent, "Enviar correo"))
-            } catch (_: ActivityNotFoundException) {
+                try {
+                    startActivity(Intent.createChooser(intent, "Enviar correo"))
+                } catch (_: ActivityNotFoundException) {
 
+                }
+            }else{
+                Toast.makeText(requireContext(), "El formato del email no es correcto", Toast.LENGTH_SHORT).show()
             }
         } else {
             Toast.makeText(requireContext(), "Debes rellenar todos los campos y marcar el checkbox", Toast.LENGTH_SHORT).show()
