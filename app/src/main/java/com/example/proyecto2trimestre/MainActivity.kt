@@ -15,6 +15,9 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.proyecto2trimestre.databinding.DesplegableMenuBinding
+import java.text.SimpleDateFormat
+import java.util.Calendar
+import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
     
@@ -54,7 +57,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         val username = intent.getStringExtra("username")
+        val fecha = obtenerFechaActual()
 
+        binding.nvDesplegable.getHeaderView(0).findViewById<TextView>(R.id.tvFecha).text = fecha
         binding.nvDesplegable.getHeaderView(0).findViewById<TextView>(R.id.tvUser).text = username
 
     }
@@ -83,5 +88,10 @@ class MainActivity : AppCompatActivity() {
             }
             else -> return super.onOptionsItemSelected(item)
         }
+    }
+    private fun obtenerFechaActual(): String {
+        val cal = Calendar.getInstance()
+        val dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
+        return dateFormat.format(cal.time)
     }
 }
