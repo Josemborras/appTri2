@@ -12,6 +12,7 @@ class PartidosAdapter(val galeria: ArrayList<Int>): RecyclerView.Adapter<Partido
         val layoutinflater = LayoutInflater.from(parent.context)
         val binding = HolderPartidosBinding.inflate(layoutinflater, parent, false)
 
+
         val layoutCelda = MyHolder(binding)
         return layoutCelda
     }
